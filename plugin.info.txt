@@ -1,7 +1,7 @@
 base   publistz
-author Raphael Reitzig, Jorge Juan, Karl Moritz Hermann
-email  jjchico@gmail.com
-date   2014-09-25
-name   publistX plugin
+author Ismael Figueroa
+email  ifigueroap@gmail.com
+date   2016-02-26
+name   publistZ plugin
 desc   Simple modification of original publist plugin
 url    http://www.dokuwiki.org/plugin:publistz
