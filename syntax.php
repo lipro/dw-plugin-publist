@@ -37,7 +37,7 @@ class syntax_plugin_publistx extends DokuWiki_Syntax_Plugin {
 
         // Partition properly
         $matches = array();
-        $pattern = '/\[publist(?:\|(page|file|url):(.+?))(?:\|(wiki|html):(page|file|url):(.+?))(?:\|(.+?(?:\|.+?)*))?\]/';
+        $pattern = '/\[publistz(?:\|(page|file|url):(.+?))(?:\|(wiki|html):(page|file|url):(.+?))(?:\|(.+?(?:\|.+?)*))?\]/';
         if ( 0 === preg_match($pattern, $match, $matches) ) {
             $data['error'] = 'Not valid publist syntax: '.$match;
         }
