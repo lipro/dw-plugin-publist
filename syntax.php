@@ -116,7 +116,7 @@ class syntax_plugin_publistx extends DokuWiki_Syntax_Plugin {
 
 
             if ( !empty($bibtex) && !empty($template) ) {
-                require_once(dirname(__FILE__).'/bib2tpl/bibtex_converter.php');
+                require_once(dirname(__FILE__).'/bib2tpl/src/bibtex_converter.php');
                 if ( is_readable(dirname(__FILE__).'/sanitiser.php')) {
                     include(dirname(__FILE__).'/sanitiser.php');
                 }
