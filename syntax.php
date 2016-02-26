@@ -29,7 +29,7 @@ class syntax_plugin_publistz extends DokuWiki_Syntax_Plugin {
     }
 
     function connectTo($mode) {
-        $this->Lexer->addSpecialPattern('\[publist\|.+?\]',$mode,'plugin_publistz');
+        $this->Lexer->addSpecialPattern('\[publistz\|.+?\]',$mode,'plugin_publistz');
     }
 
     function handle($match, $state, $pos, &$handler){
