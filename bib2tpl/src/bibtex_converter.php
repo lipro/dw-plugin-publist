@@ -296,7 +296,7 @@ class BibtexConverter {
 
     if ( $this->options['group'] !== 'none' ) {
       foreach ( $data as $entry ) {
-        if ( !empty($entry[$this->options['group']]) || $this->options['group'] === 'firstauthor' ) {
+        if ( !empty($groupingField) || $this->options['group'] === 'firstauthor' ) {
           if ( $this->options['group'] === 'firstauthor' ) {
             $target = $entry['author'][0]['nice'];
           }
