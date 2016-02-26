@@ -104,7 +104,7 @@ class BibtexConverter {
    *                           BibTeX field) and clears it up for output. Default is the
    *                           identity function.
    */
-  function __construct($options=array(), $sanitise=null) {
+  function __construct($options=array(), $sanitise=null, $authors=null) {
     // Default options
     $this->options = array(
       'only'  => array(),
