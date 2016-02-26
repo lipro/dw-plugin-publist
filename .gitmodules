@@ -1,0 +1,3 @@
+[submodule "bib2tpl"]
+	path = bib2tpl
+	url = git@github.com:ifigueroap/bib2tpl.git
