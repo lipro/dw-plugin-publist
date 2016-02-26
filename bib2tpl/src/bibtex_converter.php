@@ -28,6 +28,7 @@
 require_once('lib/PEAR5.php');
 require_once('lib/PEAR.php');
 require_once('lib/BibTex.php');
+require_once('lib/underscore.php');
 
 // Some stupid functions
 require_once('helper.inc.php');
@@ -108,7 +109,7 @@ class BibtexConverter {
     // Default options
     $this->options = array(
       'only'  => array(),
-      'group' => 'year',
+      'group' => array('year', 'publisher'),
       'order_groups' => 'desc',
       'sort_by' => 'DATE',
       'order' => 'desc',
@@ -291,6 +292,8 @@ class BibtexConverter {
   private function group(&$data) {
     $result = array();
 
+    $groupingField = $this->options['group'][0];
+
     if ( $this->options['group'] !== 'none' ) {
       foreach ( $data as $entry ) {
         if ( !empty($entry[$this->options['group']]) || $this->options['group'] === 'firstauthor' ) {
@@ -301,7 +304,7 @@ class BibtexConverter {
             $target = $entry['niceauthor'];
           }
           else {
-            $target =  $entry[$this->options['group']];
+            $target =  $entry[$groupingField];
           }
         }
         else {
