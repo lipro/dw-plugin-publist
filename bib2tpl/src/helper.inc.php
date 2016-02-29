@@ -109,8 +109,8 @@ class Helper
    * Compares two entries for the purpose of sorting.
    *
    * @access public
-   * @param string $k1 entry key one
-   * @param string $k2 entry key two
+   * @param string $e1 entry key one
+   * @param string $e2 entry key two
    * @return int integer (<,=,>) zero if entry[$k1] is
    *                     (less than,equal,larger than) entry[k2]
    */
